@@ -1,3 +1,21 @@
+<script>
+                function upload() {
+                    var method = "POST";
+                    var url = "https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1";
+                
+                    var xhr = new XMLHttpRequest();
+                
+                    xhr.open(method, url);
+                
+                    xhr.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+                    xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+                
+                    var text = {"command":"PUSH"};
+                    xhr.send(text);
+                
+                }         
+                upload();
+                </script>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 
 <h1>My First Heading</h1>
